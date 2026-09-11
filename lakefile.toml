@@ -1,0 +1,20 @@
+name = "CapacityAtlasMAC"
+version = "0.1.0"
+defaultTargets = ["CapacityAtlasMAC", "capacity_mac_audit"]
+
+[leanOptions]
+autoImplicit = false
+
+[[lean_lib]]
+name = "CapacityAtlasMAC"
+
+[[lean_exe]]
+name = "capacity_mac_audit"
+root = "CapacityAtlasMAC.Audit"
+supportInterpreter = true
+
+[[require]]
+name = "CapacityAtlas"
+git = "https://github.com/TomasOrtega/CapacityAtlas.git"
+rev = "f1ffd9d31dfa462010be6a95ab79bfd2f911ca76"
+subDir = "lean"
